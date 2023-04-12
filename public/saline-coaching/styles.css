@@ -1,0 +1,334 @@
+/* 
+
+    layout styles
+
+ */
+
+/* body of html page */
+body{
+    background-color: black;
+    margin: 0;
+}
+/* main header of page */
+h1{
+    background-color: goldenrod;
+    margin: 0;
+    text-align: center;
+    padding: 8px;
+}
+/* navigation section */
+nav{
+    background-color: goldenrod;
+    width: 100%;
+    height: 80px;
+    margin-bottom: 8px;
+    display: flex;
+}
+.logo{ /* home page link, for navigation */
+    margin: auto;
+}
+.page{ /* other pages links, for navigation */
+    margin: auto;
+}
+.logo a, .page a{
+    font-size: 16pt;
+}
+/* main flex box layout */
+.container{
+    width: 100%;
+    display: flex;
+    margin: 0;
+}
+.container-left{ /* the left side of the container */
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 8px;
+}
+aside{ /* the right side of the container */
+    background-color: darkgoldenrod;
+    width: 30%;
+    min-height: 300px;
+    margin: 8px;
+    display: flex;
+    flex-direction: column;
+}
+/* main content, for left side */
+main{ 
+    background-color: darkgoldenrod;
+    width: 100%;
+    min-height: 200px;
+}
+h2{ /* secondary header, for main */
+    background-color: palegoldenrod;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-bottom: 0;
+    text-align: center;
+    padding: 8px;
+}
+section{ /* content, for main */
+    background-color: palegoldenrod;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-top: 0;
+    padding: 8px;
+    min-height: 100px;
+}
+/* footer content, for left side */
+footer{ 
+    background-color: darkgoldenrod;
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+}
+.contact{ /* contact information, for footer */
+    color: white;
+    margin: auto;
+    width: 27%;
+    padding: 16px;
+    text-align: center;
+}
+.contact ul{	
+	padding: 0;
+	text-align:center;
+	list-style-type:none;
+}
+.media{ /* media content, for aside */
+    background-color: palegoldenrod;
+    margin: 8px;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 8px;
+}
+.desc{ /* description of media, for aside */
+    text-align: center;
+    font-weight: bold;
+}
+
+/* 
+   
+    general use styles 
+    
+*/
+h3{
+    color: red;
+    font-weight: bolder;
+}
+table, th, td{
+    border: solid 1px red;
+}
+button{
+    box-sizing: content-box;
+    font-size: large;
+    color: white;
+    background-color: red;
+}
+img, iframe{
+    width: 27vw;
+    height: 24vh; 
+}
+.skip{
+    padding: 16px;
+    text-align: center;
+}
+.testimonial{
+    font-size: x-large;
+    min-height: 90px;
+}
+
+/*
+
+    psuedo classes
+
+*/
+/* basic link */
+a:link{
+    color: red;
+}
+a:visited{
+    color: red;
+}
+a:hover{
+    color: blue;
+}
+a:active{
+    color: white;
+}
+/* navigation link */
+nav a:link{
+    color: black;
+}
+nav a:visited{
+    color: black;
+}
+nav a:hover{
+    color: red;
+}
+nav a:active{
+    color: white
+}
+/* contact link */
+.contact a:link{
+    color: white;
+}
+.contact a:visited{
+    color: white;
+}
+.contact a:hover{
+    color: black;
+}
+.contact a:active{
+    color: red;
+}
+
+/*
+
+    viewport media queries
+
+*/
+/* when browser is smaller than 545px */
+/* adapt everything to fit mobile screen */
+@media only screen and (max-width: 545px){
+    h2{ /* secondary header, for main */
+        background-color: palegoldenrod;
+        margin: 0;
+        text-align: center;
+        padding: 8px;
+    }
+    section{ /* content, for main */
+        background-color: palegoldenrod;
+        margin: 0;
+        padding: 8px;
+        min-height: 100px;
+    }
+    nav{
+        background-color: goldenrod;
+        width: 100%;
+        height: 40px;
+        margin-bottom: 8px;
+        display: flex;
+    }
+    .container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+    .container-left{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+    }
+    aside{
+        background-color: goldenrod;
+        width: 100%;
+        min-height: 300px;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 8px;
+        display: flex;
+        flex-direction: column;
+    }
+    .media{ /* media content, for aside */
+        background-color: palegoldenrod;
+        margin: 0;
+        padding: 8px;
+        display: flex;
+        flex-direction: column;
+    }
+    img, iframe{
+        width: 95%;
+        min-height: 50px; 
+    }
+    .desc{ /* description of media, for aside */
+        text-align: center;
+        font-weight: bold;
+    }
+    .logo a, .page a{
+        font-size: 12pt;
+    }
+    table{
+        font-size: x-small;
+    }
+}
+/* when browser gets bigger than 545px but is smaller than 700px */
+/* have media and tables seamlessly fit the screen */
+@media only screen and (min-width: 546px) and (max-width: 700px){
+    .container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+    .container-left{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+    }
+    aside{
+        background-color: goldenrod;
+        width: 100%;
+        min-height: 300px;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .media{ /* media content, for aside */
+        background-color: palegoldenrod;
+        margin: 8px;
+        padding: 8px;
+        display: flex;
+    }
+    img, iframe{
+        width: 50%;
+        min-height: 70px; 
+    }
+    .desc{
+        width: 50%;
+        height: 100%
+    }
+    .logo a, .page a{
+        font-size: 12pt;
+    }
+}
+/* when browser gets smaller than 1100px */
+/* have media content seamlessly fit the page */
+@media only screen and (min-width: 701px) and (max-width: 1100px){
+    .container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+    .container-left{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+    }
+    aside{
+        background-color: goldenrod;
+        width: 100%;
+        min-height: 300px;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .media{ /* media content, for aside */
+        background-color: palegoldenrod;
+        margin: 8px;
+        padding: 8px;
+        display: flex;
+    }
+    img, iframe{
+        width: 50%;
+        min-height: 70px; 
+    }
+    .desc{
+        width: 50%;
+        height: 100%
+    }
+}

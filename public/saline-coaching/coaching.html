@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saline Coaching - Coaching</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Saline Coaching</h1>
+    <!--The navigation for my website.-->
+    <nav>
+        <!--The logo class represents my websites logo that will act as the home page link.-->
+        <div class="logo"><a href="index.html" title="Go Home">Home</a></div>
+        <!--The page class represents the websites links to all other pages.-->
+        <div class="page"><a href="coaching.html" title="Go to Coaching">Coaching</a></div>
+        <div class="page"><a href="diet-plans.html" title="Go to Diet Plans">Diet Plans</a></div>
+        <div class="page"><a href="training-routines.html" title="Go to Training Routines">Training Routines</a></div>
+        <div class="page"><a href="resources.html" title="Go to Resources">Resources</a></div>
+    </nav>
+    <!--This class will contain the remainder of my pages content, everything under the navigation.-->
+    <div class="container">
+        <!--This class will contain the content to be displayed on the left side of the screen, the main content of the page and the footer.-->
+        <div class="container-left">
+            <!--The main content of the page.-->
+            <main>
+                <h2>Coaching</h2>
+                <section>
+                    <h3 class="skip"><a href="#pricing">Click to see pricing and order your coaching plan</a></h3>
+                    <h3>Services Offered</h3>
+                    <ol>
+                        <li>Coach Saline's extensive fitness related knowledge</li>
+                        <li>One-on-one training sessions</li>
+                        <li>Personalized diet plan</li>
+                        <li>Personalized training routine</li>
+                        <li>24/7 support through zoom, phone, or email</li>
+                    </ol>
+                    <h3>Submit a testimonial</h3>
+                    <p>
+                        Satisfied with the service you received from Coach Saline? Leave a review for a chance to be featured on this website's testimonials.
+                    </p>
+                    <p>Enter review: <input type="text" id="review"></p>
+                    <p>Enter your name: <input type="text" id="name"></p>
+                    <button type="button" id="submit">Submit review</button>
+                    <h3 id="pricing">Pricing</h3>
+                    <dl>
+                        <dt><b>Standard</b> Coaching - $999.99</dt>
+                        <dd>One year</dd>
+                        <dd><b>1</b> one-on-one training session a week</dd>
+                        <dd>"Elite" diet plan</dd>
+                        <dd>"Elite" training routine</dd>
+                        <dd><b>10%</b> renewal discount</dd>
+
+                        <dt><b>Elite</b> Coaching - $4,499.99</dt>
+                        <dd>One year</dd>
+                        <dd><b>full time</b> one-on-one training sessions</dd>
+                        <dd>"Elite" diet plan</dd>
+                        <dd>"Elite" training routine</dd>
+                        <dd><b>25%</b> renewal discount</dd>
+                    </dl>
+                    <h3>Order</h3>
+                    <p>
+                        Enter plan: <input type="text" id="plan-type"> (Standard, Elite)
+                        <button type="button" id="place-order">Place order</button>
+                    </p>
+                </section>
+            </main>
+            <!--The footer of the page that will contain relevant contact information for the reader.-->
+            <footer>
+                <div class="contact">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><a href="mailto:jsaline@albany.edu" title="Send me an email">jsaline@albany.edu</a></li>
+                        <li>(914)-414-1803</li>
+                        <li>University at Albany, 1400 Washington Ave, Albany, NY</li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+        <!--This class will contain the content to be displayed on the right side of the screen, mainly multimedia extra content.-->
+        <aside>
+            <!--The media class repsents the multimedia aside content that will show up on the right side of the screen.-->
+            <div class="media">
+                <img width="390" height="219" src="correcting-form.jpg" alt="person correcting the form of a girl lifting weight">                
+                <p class="desc">Having someone to correct your form and provide lifting cues is vital when you are first starting out</p>
+            </div>
+            <div class="media">
+                <p class="testimonial">"Joey coached me for 3 months and it changed my life forever."</p>
+                <p class="desc">Client Testimonial - Jesse, first ever client</p>
+            </div>
+            <div class="media">
+                <p class="testimonial">"I purchased a diet plan and love eating healthy now, I never knew it could be so easy."</p>
+                <p class="desc">Client Testimonial - private client</p>
+            </div>
+            <div class="media">
+                <p class="testimonial" id="testimonial">waiting for a client to share their experience...</p>
+                <p class="desc">Client Testimonial - <span id="client"></span></p>
+            </div>
+        </aside>
+    </div>
+    <script src="scripts.js"></script>
+    <script src="ordering.js"></script>
+</body>
+</html>

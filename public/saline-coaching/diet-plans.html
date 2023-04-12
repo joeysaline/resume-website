@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saline Coaching - Diet Plans</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Saline Coaching</h1>
+    <!--The navigation for my website.-->
+    <nav>
+        <!--The logo class represents my websites logo that will act as the home page link.-->
+        <div class="logo"><a href="index.html" title="Go Home">Home</a></div>
+        <!--The page class represents the websites links to all other pages.-->
+        <div class="page"><a href="coaching.html" title="Go to Coaching">Coaching</a></div>
+        <div class="page"><a href="diet-plans.html" title="Go to Diet Plans">Diet Plans</a></div>
+        <div class="page"><a href="training-routines.html" title="Go to Training Routines">Training Routines</a></div>
+        <div class="page"><a href="resources.html" title="Go to Resources">Resources</a></div>
+    </nav>
+    <!--This class will contain the remainder of my pages content, everything under the navigation.-->
+    <div class="container">
+        <!--This class will contain the content to be displayed on the left side of the screen, the main content of the page and the footer.-->
+        <div class="container-left">
+            <!--The main content of the page.-->
+            <main>
+                <h2>Diet Plans</h2>
+                <section>
+                    <h3 class="skip"><a href="#pricing">Click to see pricing and order your personalized diet plan</a></h3>
+                    <h3>What do you eat?</h3>
+                    <p>
+                        What does a typical week look like when it comes to your diet? Is it nutrient dense, or are you just barely surviving off multivitamins?
+                        Do you find yourself stuck trying to lose weight, and when you diet through the day you make up for it by binging at night? There is an
+                        overwhelming number of Americans particularly that seem to be more ignorant than children when it comes to nutrition.
+                   </p>
+                   <p>
+                        The key to acheiving your goals with respect to dieting is by understanding the food you are eating. Restrictive diets such as keto, no-carb, and
+                        others featured in the current issue of a health magazine all fall short at the same point. They don't teach you what the problem is with
+                        your current diet, and instead just offer a temporary solution that you will grow to despise almost as soon as you start it.
+                   </p>
+                   <p>
+                        <em>Caloric density</em><br>
+                        Scary phrase, isn't it? This should not be the case. It simply refers to the number of calories you see on
+                        the label relative to how much food you are consuming. Let's make sense of this. Eating 3 whole chocolate bars would likely not pose
+                        too large of a challenge, however, at roughly 200 calories per bar, you just ate 600 calories in 2 minutes and will be hungry in 20 minutes. 
+                        Now what if you attempted to
+                        eat 2 whole cups of egg whites, with a large handful of spinach, and 2 english muffins. This would take some time, maybe 5-10 minutes
+                        depending on how quick you eat. This meal was also 600 caloires, but will keep you full for anywhere from 1-4 hours.<br>
+                        What is the point? That not all food is equal, especially when talking about calories.
+                   </p>
+                   <p>
+                        Now that you understand the basics of why selection of food is important, I will just put the facts in front of you and you can sort it
+                        out in your head.
+                    </p>
+                    <ul>
+                        <li>Weight loss, gain, and maintenance are all fully dependent on calories.</li>
+                        <li>Your body burns a certain amount of calories just to keep you alive, this is called your Basal Metabolic Rate (BMR).</li>
+                        <li>The amount of caloires you burn in a day is your BMR plus all calories burned through any type of exercise (including daily steps).</li>
+                        <li>In order to lose weight, you must eat less calories than you burn.</li>
+                        <li>In order to gain weight, you must eat more calories than you burn.</li>
+                        <li>To remain the same weight, you must eat the same amount of calories that you burn.</li>
+                        <li>To achieve any of the above 3 goals, you must know which foods will help you do so.</li>
+                    </ul>
+                    <p>
+                        Please utilize this helpful link to
+                        <a href="https://www.calculator.net/bmr-calculator.html" title="Calculate your bmr" target="_blank">find your personal basal metabolic rate.</a><br>
+                    </p>
+                    <h3>How can I help?</h3>
+                    <p>
+                        Ordering a plan from me will get you a schedule of meals that are tailored to help you reach a set number of calories. 
+                        These will be simple, quick, and enjoyable to ensure you adhere strictly to the plan. Most importantly, the diets will never leave you
+                        hungry, nor make you naseous from forcing down food.
+                    </p>
+                    <p>
+                        Each plan includes my priority email where you can receive round the clock support. This means any and all diet-related questions 
+                        will be answered within 12 hours. This resource is avaiable only throughout the duration of your purchased plan.
+                    </p>
+                    <h3 id="pricing">Pricing</h3>
+                    <dl>
+                        <dt><b>Basic</b> 4 week plan - $59.99</dt>
+                        <dd>This plan includes a nutrition schedule with meal timing and <b>3</b> options per meal.<br>
+                            Throughout the duration of your 4 week plan, you will have access to my priority email.
+                        </dd>
+                        <dt><b>Extended</b> 8 week plan - $99.99</dt>
+                        <dd>This plan includes a nutrition schedule with meal timing and <b>6</b> options per meal.<br>
+                            Throughout the duration of your 8 week plan, you will have access to my priority email.
+                        </dd>
+                        <dt><b>Standard</b> 12 week plan - $129.99</dt>
+                        <dd>This plan includes a nutrition schedule with meal timing and <b>9</b> options per meal.<br>
+                            Throughout the duration of your 12 week plan, you will have access to my priority email.
+                        </dd>
+                        <dt><b>Elite</b> 52 week plan - $369.99</dt>
+                        <dd>This plan includes a nutrition schedule with meal timing and <b>27</b> options per meal.<br>
+                            Throughout the duration of your 52 week plan, you will have access to my priority email.
+                        </dd>
+                    </dl>
+                    <h3>Order</h3>
+                    <p>
+                        Enter plan: <input type="text" id="plan-type"> (Basic, Extended, Standard, Elite)
+                        <button type="button" id="place-order">Place order</button>
+                    </p>
+                </section>
+            </main>
+            <!--The footer of the page that will contain relevant contact information for the reader.-->
+            <footer>
+                <div class="contact">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><a href="mailto:jsaline@albany.edu" title="Send me an email">jsaline@albany.edu</a></li>
+                        <li>(914)-414-1803</li>
+                        <li>University at Albany, 1400 Washington Ave, Albany, NY</li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+        <!--This class will contain the content to be displayed on the right side of the screen, mainly multimedia extra content.-->
+        <aside>
+            <!--The media class repsents the multimedia aside content that will show up on the right side of the screen.-->
+            <div class="media">
+                <iframe src="https://www.youtube.com/embed/z-p84S56h3U" title="YouTube video player" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p class="desc">Watch Greg Doucette, Professional Bodybuilder and Guiness Book of World Records holder for Heaviest Sumo Deadlift in One 
+                    Minute, go through his recipe for a high protein low calorie version of french toast</p>
+            </div>
+            <div class="media">
+                <img src="pork-fried-rice.jpg" alt="Pork Fried Rice">              
+                <p class="desc">Trader Joe's vegetable fried rice with pork tenderloin, quick and delicious</p>
+            </div>
+            <div class="media">
+                <iframe width="390" height="219" src="https://www.youtube.com/embed/iA-L82HuRU8" title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                
+                <p class="desc">Watch Remington James, YouTuber, make his high protein low calorie chocolate chip cookies</p>
+            </div>
+            <div class="media">
+                <img width="390" height="219" src="chicken-thighs.jpg" alt="Chicken thigs">                
+                <p class="desc">Chicken thighs are a perfect alternative if you are getting sick of chicken breast, thighs stay much more tender and juicy</p>
+            </div>
+        </aside>
+    </div>
+    <script src="ordering.js"></script>
+</body>
+</html>
