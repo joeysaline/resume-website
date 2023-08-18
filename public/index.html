@@ -8,6 +8,7 @@
 
     <title>Joseph A Saline</title>
 
+    <link href="styles.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 </head>
@@ -42,27 +43,25 @@
     <!-- Main -->
     <main>
         <div class="container py-3">
-            <div class="row align-items-center justify-content-between text-center text-md-start">
-                <div class="col-12 col-md-6">
+            <div class="row align-items-center justify-content-between text-center text-lg-start">
+                <div class="col-12 col-lg-6">
                     <img class="img-fluid"
                         src="https://resume-website-bucket.s3.us-east-2.amazonaws.com/solo+ua+grad+pic.jpg"
                         alt="Picture of myself benching pressing">
                 </div>
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-lg-6">
                     <div class="py-3">
                         <h1>Joseph August Saline</h1>
                     </div>
                     <p class="lead">
-                        I am a recent graduate from the University at Albany. My degree featured a major in Computer Science with
-                        a double minor in Informatics and Mathematics. My biggest hobby is weight lifting as I am obsessed with sports science
-                        and opitmizing nutrition and performance. I also
-                        love
-                        all different types of sports including boxing, lacrosse, and basketball. I am very passionate about computer science and am constantly finding
-                        new ways to use it to increase efficiency in our daily lives. My main focus is full stack web app development, but I am interested in all aspects
-                        of software engineerings. I enjoy solving complex problems that require difficult technical approaches as they are the most rewarding once solved.
-                    </p>
-                    <p class="lead">
-                        Please explore my website to learn about my accomplishments and experience the quality of my
+                        I am a recent graduate from the University at Albany with a degree majoring in Computer Science and
+                        double minors in Informatics and Mathematics.
+                        <br><br>My biggest hobby is weight lifting as I am obsessed with sports science
+                        and opitmizing nutrition and performance.
+                        I am very passionate about computer science and how it can increase efficiency in our daily lives.
+                        The purpose of this website is to serve as a hands-on resume that can better demonstrate my abilities in the field of software engineering with the construction of this website itself as well as the content found on it.
+                        <br><br>My education at the University at Albany prepared me for all aspects of software engineering.
+                        Please explore the website to learn about my accomplishments and experience the quality of my
                         work.
                     </p>
                 </div>
@@ -72,25 +71,40 @@
                     <ul class="list-group list-group-flush">
 
                         <li class="list-group-item py-3">
-                            <a href="projects.html" class="">
-                                <h3>Projects</h3>
-                                <p>Explore my featured projects!</p>
+                            <a href="projects.html" class="link-button"
+                            onmouseover="document.getElementById('hoverable3').style.backgroundColor='#f2f2f2'" 
+                            onmouseout="document.getElementById('hoverable3').style.backgroundColor='#ffffff'">
+                                <div id="hoverable3" class="p-3 shadow">
+                                    <h3>Projects</h3>
+                                    <p>Explore my featured projects!</p>
+                                </div>
                             </a>
                         </li>
                         <li class="list-group-item py-3">
-                            <a href="resume.html" class="">
-                                <h3>Resume</h3>
-                                <p>Go to my resume here.</p>
+                            <a href="resume.html" class="link-button"
+                            onmouseover="document.getElementById('hoverable4').style.backgroundColor='#f2f2f2'" 
+                            onmouseout="document.getElementById('hoverable4').style.backgroundColor='#ffffff'">
+                                <div id="hoverable4" class="p-3 shadow">
+                                    <h3>Resume</h3>
+                                    <p>Go to my resume here.</p>
+                                </div>
                             </a>
                         </li>
                         <li class="list-group-item py-3">
-                            <a href="contact.html">
+                            <a href="contact.html" class="link-button" 
+                            onmouseover="document.getElementById('hoverable5').style.backgroundColor='#f2f2f2'" 
+                            onmouseout="document.getElementById('hoverable5').style.backgroundColor='#ffffff'">
+                            <div id="hoverable5" class="p-3 shadow">
                                 <h3>Contact</h3>
                                 <p>Looking to reach out to me?</p>
+                            </div>
                             </a>
                         </li>
                         <li class="list-group-item py-3">
-                            <a href="https://github.com/joeysaline" class="">
+                            <a href="https://github.com/joeysaline" class="link-button"
+                            onmouseover="document.getElementById('hoverable6').style.backgroundColor='#f2f2f2'" 
+                            onmouseout="document.getElementById('hoverable6').style.backgroundColor='#ffffff'">
+                            <div id="hoverable6" class="p-3 shadow text-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="black"
                                     class="bi bi-github" viewBox="0 0 16 16">
                                     <path
@@ -98,35 +112,48 @@
                                 </svg>
                                 <span class="d-none d-md-block">View my Git profile.</span>
                             </a>
+                            </div>
                         </li>
                         <li class="list-group-item py-3">
-                            <a href="https://www.linkedin.com/in/joseph-saline-49b791252/" class="">
+                            <a href="https://www.linkedin.com/in/joseph-saline-49b791252/" class="link-button"
+                            onmouseover="document.getElementById('hoverable7').style.backgroundColor='#f2f2f2'" 
+                            onmouseout="document.getElementById('hoverable7').style.backgroundColor='#ffffff'">
+                            <div id="hoverable7" class="p-3 shadow">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="blue"
                                     class="bi bi-github" viewBox="0 0 16 16">
                                     <path
                                         d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
                                 </svg>
                                 <span class="d-none d-md-block">Visit my LinkedIn profile.</span>
+                            </div>
                             </a>
                         </li>
                         <li class="list-group-item py-3">
-                            <a href="https://www.youtube.com/channel/UCV0eigx1UX15L7MxWUdcMBA" class="">
+                            <a href="https://www.youtube.com/channel/UCV0eigx1UX15L7MxWUdcMBA" class="link-button"
+                            onmouseover="document.getElementById('hoverable8').style.backgroundColor='#f2f2f2'" 
+                            onmouseout="document.getElementById('hoverable8').style.backgroundColor='#ffffff'">
+                            <div id="hoverable8" class="p-3 shadow">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="red"
                                     class="bi bi-youtube" viewBox="0 0 16 16">
                                     <path
                                         d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
                                 </svg>
                                 <span class="d-none d-md-block">Explore my YouTube channel.</span>
+                            </div>
                             </a>
                         </li>
                     </ul>
                 </div>
                 <div class="col-12 col-md-6">
-                    <a href="./images/Joseph August Saline Resume FINAL MAY '23 PDF.pdf" download style="text-decoration: none; color: black;">
-                        Click to download a copy of my formal resume.
-                        <img class="img-fluid"
-                            src="https://resume-website-bucket.s3.us-east-2.amazonaws.com/joseph-salines-resume.png"
-                            alt="My resume">
+                    <a href="./images/Joseph August Saline Resume FINAL MAY '23 PDF.pdf" download class="link-button"
+                    onmouseover="document.getElementById('hoverable9').style.backgroundColor='#f2f2f2'" 
+                    onmouseout="document.getElementById('hoverable9').style.backgroundColor='#ffffff'">
+                        <div id="hoverable9" class="p-3 shadow">
+                            <h4>Formal Resume Download</h4>
+                            <img class="img-fluid"
+                                src="https://resume-website-bucket.s3.us-east-2.amazonaws.com/joseph-salines-resume.png"
+                                alt="My resume">
+                        </div>
                     </a>
                 </div>
             </div>
@@ -153,7 +180,7 @@
         </div>
     </main>
 
-
+    <script src="scripts.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
         crossorigin="anonymous"></script>
